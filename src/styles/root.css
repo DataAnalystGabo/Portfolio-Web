@@ -1,0 +1,17 @@
+:root{
+    --background: #F8F9FA;
+    --background-sidebar: rgba(123, 44, 191, .05);
+    --primary-text: #212529;
+    --secondary-text: #495057;
+    --disabled-text: #ADB5BD;
+    --primary-color: #7B2CBF;
+    --active-color: #4cc9f0;
+    --font-family-primary: "Inter", sans-serif;
+    --font-size-h1: 1.5rem;
+    --font-size-normal: 1rem;
+    --font-size-tinny: .875rem;
+    --font-weight-normal: 400;
+    --font-weight-medium: 600;
+    --font-weight-bold: 800;
+
+}

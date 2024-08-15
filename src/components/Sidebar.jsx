@@ -17,7 +17,7 @@ export function Sidebar() {
                         <h3>Buenos Aires, Argentina</h3>
                         <IconsProfile>
                             <LinkProfile
-                                href="https:/https://github.com/DataAnalystGabo"
+                                href="https://github.com/DataAnalystGabo"
                                 target="_blank"
                                 rel="noopener noreferrer"
                             >
@@ -63,10 +63,10 @@ export function Sidebar() {
 }
 
 const Container = styled.div`
-    width: 22.5625rem;
     height: 100vh;
-    max-height: 100vh;
-    position: fixed;
+    flex: 0 0 22.5625rem;
+    position: sticky;
+    top: 0;
     display: flex;
     flex-direction: column;
     justify-content: space-between;

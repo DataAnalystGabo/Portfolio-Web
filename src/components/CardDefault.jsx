@@ -1,6 +1,12 @@
 import styled from "styled-components";
 
-export function CardDefault({ title, subTitle, body, children }) {
+export function CardDefault({
+    title,
+    subTitle,
+    body,
+    paddingBottom,
+    children,
+}) {
     return (
         <Container>
             {title && <Title>{title}</Title>}
@@ -18,14 +24,14 @@ const Container = styled.div`
 
 const Title = styled.p`
     margin: 0;
-    padding: 0.5rem 0;
+    padding-bottom: 0.3rem;
     font-weight: var(--font-weight-medium);
     color: var(--primary-text);
 `;
 
 const SubTitle = styled.p`
     margin: 0;
-    padding: 0.5rem 0;
+    padding-bottom: 0.5rem;
     font-weight: var(--font-weight-normal);
     font-size: var(--font-size-tinny);
     color: var(--secondary-text);
@@ -33,6 +39,5 @@ const SubTitle = styled.p`
 
 const Body = styled.p`
     margin: 0;
-    padding: 0.5rem 0;
     color: var(--secondary-text);
 `;

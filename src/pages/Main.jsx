@@ -1,18 +1,18 @@
 import styled from "styled-components";
 import { CardDefault } from "../components/CardDefault";
 
-export function Home() {
+export function Main() {
     return (
         <Container>
             <Section>
                 <h2>Educación & Certificaciones</h2>
                 <CardDefault
-                    title="Licenciatura en Ciencias de Datos"
+                    title="LICENCIATURA EN CIENCIAS DE DATOS"
                     subTitle="2022 - Actualidad"
                     body="Universidad Nacional de Almirante Brown - 14 de 30 materias aprobadas."
                 />
                 <CardDefault
-                    title="Certificación Especialización en Gestión Pública y Datos"
+                    title="CERTIFICACIÓN ESPECIALIZACIÓN EN GESTIÓN PÚBLICA Y DATOS"
                     subTitle="Abril 2024 - Junio 2024"
                     body="El programa impartido por el Instituto de Formación Política y Gestión Pública está diseñado para proporcionar herramientas específicas para la gestión pública. Está estructurado en dos partes: un ciclo introductorio de formación en gestión pública y el programa de especialización propiamente dicho"
                 />

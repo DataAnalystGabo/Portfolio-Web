@@ -1,9 +1,11 @@
 import styled from "styled-components";
 import { Pill } from "./Pill";
 import { CardDefault } from "./CardDefault";
+import { ButtonDownload } from "./ButtonDownload";
 import { FaGithubAlt } from "react-icons/fa";
 import { FaLinkedinIn } from "react-icons/fa";
 import { RiMailSendLine } from "react-icons/ri";
+import { BsPatchCheckFill } from "react-icons/bs";
 
 export function Sidebar() {
     return (
@@ -12,7 +14,10 @@ export function Sidebar() {
                 <Header>
                     <PictureProfile></PictureProfile>
                     <DataProfile>
-                        <h1>Gonzalo Ramirez</h1>
+                        <NameProfile>
+                            <h1>Gonzalo Ramirez</h1>
+                            <BsPatchCheckFill />
+                        </NameProfile>
                         <h2>Data Analyst en GCBA</h2>
                         <h3>Buenos Aires, Argentina</h3>
                         <IconsProfile>
@@ -22,6 +27,7 @@ export function Sidebar() {
                                 rel="noopener noreferrer"
                             >
                                 <FaGithubAlt />
+                                <span>Github</span>
                             </LinkProfile>
                             <LinkProfile
                                 href="https://www.linkedin.com/in/gonzaramirez95/"
@@ -29,6 +35,7 @@ export function Sidebar() {
                                 rel="noopener noreferrer"
                             >
                                 <FaLinkedinIn />
+                                <span>Linkedin</span>
                             </LinkProfile>
                             <LinkProfile
                                 href="mailto:gonzalogabrielramirez@outlook.com.ar"
@@ -36,6 +43,7 @@ export function Sidebar() {
                                 rel="noopener noreferrer"
                             >
                                 <RiMailSendLine />
+                                <span>Enviar email</span>
                             </LinkProfile>
                         </IconsProfile>
                     </DataProfile>
@@ -48,7 +56,9 @@ export function Sidebar() {
                     industry's standard dummy text ever since the 1500s,
                     when.
                 "
-                />
+                >
+                    <ButtonDownload text="Descargar Cv" />
+                </CardDefault>
                 <CardDefault title="Stack de Herramientas">
                     <Pills>
                         <Pill skill={"SQL"} />
@@ -97,7 +107,8 @@ const DataProfile = styled.div`
     flex-direction: column;
     gap: 0.7rem;
     h1 {
-        color: var(--primary-color);
+        color: var(--secondary-color);
+        line-height: 1.5rem;
     }
     h2 {
         font-weight: 400;
@@ -107,6 +118,18 @@ const DataProfile = styled.div`
         font-size: var(--font-size-tinny);
         font-weight: var(--font-weight-normal);
         color: var(--secondary-text);
+    }
+`;
+
+const NameProfile = styled.div`
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    svg {
+        font-size: 1.5rem;
+        color: var(--verify-color);
     }
 `;
 
@@ -121,6 +144,7 @@ const LinkProfile = styled.a`
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
     padding: 0;
     margin: 0;
     svg {
@@ -129,7 +153,42 @@ const LinkProfile = styled.a`
         transition: all 0.2s ease-in-out;
     }
     svg:hover {
-        color: var(--disabled-text);
+        opacity: 0.8;
+    }
+    span {
+        width: max-content;
+        position: absolute;
+        top: 1.5rem;
+        left: 0.2rem;
+        font-size: var(--font-size-tinny);
+        font-weight: var(--font-weight-normal);
+        background-color: var(--secondary-text);
+        padding: 0.3125rem 0.5rem;
+        border-radius: 0.3125rem;
+        box-shadow: 0 0.625rem 0.625rem rgba(0, 0, 0, 0.2);
+        opacity: 0;
+        pointer-events: none;
+        transition: all 0.2s cubic-bezier(0.58, -0.45, 0.255, 1.45);
+        color: var(--background);
+    }
+    span::before {
+        height: 0.5rem;
+        width: 0.5rem;
+        position: absolute;
+        content: "";
+        background-color: var(--secondary-text);
+        top: -3px;
+        left: 20%;
+        transform: translate(-50%) rotate(45deg);
+        transition: all 0.2s cubic-bezier(0.58, -0.45, 0.255, 1.45);
+    }
+    &:hover {
+        span {
+            top: 2.5rem;
+            opacity: 1;
+            visibility: visible;
+            pointer-events: auto;
+        }
     }
 `;
 

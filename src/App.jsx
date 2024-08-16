@@ -1,13 +1,13 @@
 import styled from "styled-components";
 import { Sidebar } from "./components/Sidebar";
-import { Home } from "./pages/Home";
+import { Main } from "./pages/Main";
 
 function App() {
     return (
         <>
             <Container>
                 <Sidebar />
-                <Home></Home>
+                <Main></Main>
             </Container>
         </>
     );

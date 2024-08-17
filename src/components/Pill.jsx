@@ -1,8 +1,13 @@
 import styled from "styled-components";
 
-export function Pill({ skill }) {
+export function Pill({ skill, children, border, backgroundColor, color }) {
     return (
-        <Container>
+        <Container
+            $border={border}
+            $backgroundColor={backgroundColor}
+            $color={color}
+        >
+            {children}
             <p>{skill}</p>
         </Container>
     );
@@ -10,12 +15,23 @@ export function Pill({ skill }) {
 
 const Container = styled.div`
     width: max-content;
-    border: 1.7px solid var(--primary-color);
-    background-color: var(--background-sidebar);
-    border-radius: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0.125rem 0.8rem;
+    border: ${({ $border }) =>
+        $border ? $border : "1.7px solid var(--primary-color)"};
+    background-color: ${({ $backgroundColor }) =>
+        $backgroundColor ? $backgroundColor : "var(--background-sidebar)"};
+    border-radius: 10rem;
+    gap: 0.2rem;
     p {
-        padding: 0.125rem 1rem;
         margin: 0;
-        color: var(--primary-color);
+        color: ${({ $color }) => ($color ? $color : "var(--primary-color)")};
+    }
+    svg {
+        font-size: 1.1rem;
+        color: ${({ $color }) => ($color ? $color : "var(--primary-color)")};
     }
 `;

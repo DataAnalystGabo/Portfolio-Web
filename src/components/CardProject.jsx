@@ -1,12 +1,12 @@
 import styled from "styled-components";
-import bannerLinea144 from "../assets/bannerLinea144.webp";
+import { ButtonReadMore } from "./ButtonReadMore";
 
-export function CardProject({ title, children, body }) {
+export function CardProject({ title, children, body, bannerImage }) {
     return (
         <Container>
             <Banner>
                 <img
-                    src={bannerLinea144}
+                    src={bannerImage}
                     alt="Imagen representativa de la línea 144"
                 ></img>
             </Banner>
@@ -17,20 +17,25 @@ export function CardProject({ title, children, body }) {
             <Body>
                 <p>{body}</p>
             </Body>
+            <ButtonReadMore></ButtonReadMore>
         </Container>
     );
 }
 
 const Container = styled.div`
-    width: 30.875rem;
+    width: 100%;
     display: flex;
     flex-direction: column;
+    align-items: start;
     gap: 1rem;
+    &:hover .buttonReadMore:not(:hover) svg {
+        animation: read 0.5s ease-in-out infinite;
+    }
 `;
 
 const Banner = styled.picture`
-    width: 30.875rem;
-    height: 15.625rem;
+    width: 100%;
+    height: auto;
     background-color: var(--disabled-text);
     img {
         width: 100%;

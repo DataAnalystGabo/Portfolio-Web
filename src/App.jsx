@@ -17,4 +17,8 @@ export default App;
 
 const Container = styled.div`
     display: flex;
+
+    @media (max-width: 950px) {
+        flex-direction: column;
+    }
 `;

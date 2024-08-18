@@ -6,13 +6,16 @@ import { FaGithubAlt } from "react-icons/fa";
 import { FaLinkedinIn } from "react-icons/fa";
 import { RiMailSendLine } from "react-icons/ri";
 import { BsPatchCheckFill } from "react-icons/bs";
+import fotoPerfil from "../assets/fotoPerfil.webp";
 
 export function Sidebar() {
     return (
         <>
             <Container>
                 <Header>
-                    <PictureProfile></PictureProfile>
+                    <PictureProfile>
+                        <img src={fotoPerfil}></img>
+                    </PictureProfile>
                     <DataProfile>
                         <NameProfile>
                             <h1>Gonzalo Ramirez</h1>
@@ -84,6 +87,14 @@ const Container = styled.div`
     background-color: var(--background-sidebar);
     border-right: 1px solid var(--primary-color);
     box-sizing: border-box;
+
+    @media (max-width: 950px) {
+        position: relative;
+        border-right: none;
+        border-bottom: 1px solid var(--primary-color);
+        padding: 2rem 1rem 1rem 1rem;
+        gap: 1rem;
+    }
 `;
 
 const Header = styled.div`
@@ -93,13 +104,31 @@ const Header = styled.div`
     justify-content: center;
     align-items: start;
     gap: 1.5rem;
+
+    @media (max-width: 950px) {
+        flex-direction: row;
+        justify-content: start;
+        align-items: center;
+        gap: 0.7rem;
+    }
 `;
 
-const PictureProfile = styled.div`
+const PictureProfile = styled.picture`
     width: 11.25rem;
     height: 11.25rem;
     border-radius: 100%;
     background-color: var(--disabled-text);
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+        filter: drop-shadow(0.4rem 0.4rem 0.4rem rgba(0, 0, 0, 0.1));
+    }
+    @media (max-width: 950px) {
+        width: 6rem;
+        height: 6rem;
+    }
 `;
 
 const DataProfile = styled.div`
@@ -119,6 +148,13 @@ const DataProfile = styled.div`
         font-weight: var(--font-weight-normal);
         color: var(--secondary-text);
     }
+    @media (max-width: 950px) {
+        gap: 0.1rem;
+        h1 {
+            line-height: 1.3rem;
+            font-size: 1.3rem;
+        }
+    }
 `;
 
 const NameProfile = styled.div`
@@ -131,6 +167,12 @@ const NameProfile = styled.div`
         font-size: 1.5rem;
         color: var(--verify-color);
     }
+    @media (max-width: 950px) {
+        gap: 0.2rem;
+        svg {
+            font-size: 1rem;
+        }
+    }
 `;
 
 const IconsProfile = styled.div`
@@ -138,6 +180,9 @@ const IconsProfile = styled.div`
     flex-direction: row;
     align-items: center;
     gap: 1rem;
+    @media (max-width: 950px) {
+        gap: 0.5rem;
+    }
 `;
 
 const LinkProfile = styled.a`
@@ -190,6 +235,11 @@ const LinkProfile = styled.a`
             pointer-events: auto;
         }
     }
+    @media (max-width: 950px) {
+        svg {
+            font-size: 1.5rem;
+        }
+    }
 `;
 
 const Pills = styled.div`
@@ -200,4 +250,7 @@ const Pills = styled.div`
     padding: 0.5rem 0;
     font-weight: var(--font-weight-normal);
     gap: 0.7rem;
+    @media (max-width: 950px) {
+        gap: 0.5rem;
+    }
 `;

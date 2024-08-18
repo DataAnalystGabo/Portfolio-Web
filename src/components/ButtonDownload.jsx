@@ -30,4 +30,7 @@ const Button = styled.button`
         transform: translate(0);
         box-shadow: none;
     }
+    @media (max-width: 950px) {
+        margin-top: 1rem;
+    }
 `;

@@ -1,12 +1,6 @@
 import styled from "styled-components";
 
-export function CardDefault({
-    title,
-    subTitle,
-    body,
-    paddingBottom,
-    children,
-}) {
+export function CardDefault({ title, subTitle, body, children }) {
     return (
         <Container>
             {title && <Title>{title}</Title>}

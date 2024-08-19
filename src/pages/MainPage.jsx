@@ -7,7 +7,7 @@ import { AiOutlineRadarChart } from "react-icons/ai";
 import { TbChartAreaLineFilled } from "react-icons/tb";
 import bannerLinea144 from "../assets/bannerLinea144.webp";
 
-export function Main() {
+export function MainPage() {
     return (
         <Container>
             <Section>
@@ -174,4 +174,3 @@ const CardsWrapper = styled.div`
         gap: 2rem;
     }
 `;
-

@@ -1,11 +1,11 @@
 import styled from "styled-components";
-import { CardDefault } from "../components/CardDefault";
-import { CardProject } from "../components/CardProject";
-import { Pill } from "../components/Pill";
+import { CardDefault } from "@components/CardDefault";
+import { CardProject } from "@components/CardProject";
+import { Pill } from "@components/Pill";
 import { IoLogoPython } from "react-icons/io5";
 import { AiOutlineRadarChart } from "react-icons/ai";
 import { TbChartAreaLineFilled } from "react-icons/tb";
-import bannerLinea144 from "../assets/bannerLinea144.webp";
+import bannerLinea144 from "@assets/bannerLinea144.webp";
 
 export function MainPage() {
     return (

@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { ButtonReadMore } from "./ButtonReadMore";
+import { ButtonReadMore } from "@components/ButtonReadMore";
 
 export function CardProject({ title, children, body, bannerImage }) {
     return (

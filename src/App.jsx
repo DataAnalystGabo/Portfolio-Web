@@ -1,6 +1,6 @@
 import styled from "styled-components";
-import { Sidebar } from "./components/Sidebar";
-import { MainPage } from "./pages/MainPage";
+import { Sidebar } from "@components/Sidebar";
+import { MainPage } from "@pages/MainPage";
 
 function App() {
     return (

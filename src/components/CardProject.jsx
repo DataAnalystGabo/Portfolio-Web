@@ -1,10 +1,12 @@
 import styled from "styled-components";
 import { ButtonReadMore } from "@components/ButtonReadMore";
+import { Like } from "@components/Like";
 
-export function CardProject({ title, children, body, bannerImage }) {
+export function CardProject({ title, children, body, bannerImage, projectId }) {
     return (
         <Container>
             <Banner>
+                <Like projectId={projectId} projectName={title} />
                 <img
                     src={bannerImage}
                     alt="Imagen representativa de la línea 144"
@@ -36,6 +38,7 @@ const Container = styled.div`
 const Banner = styled.picture`
     width: 100%;
     height: auto;
+    position: relative;
     background-color: var(--disabled-text);
     img {
         width: 100%;

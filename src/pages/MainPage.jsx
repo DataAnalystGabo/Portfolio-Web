@@ -42,6 +42,7 @@ export function MainPage() {
                 <h2>Projectos</h2>
                 <CardsWrapper>
                     <CardProject
+                        projectId="1"
                         title="Análisis descriptivo de la Linea 144"
                         body="¿Cúal es la edad media de las personas que denuncian violencia de género?, ¿cuántos tipos de géneros podemos encontrar?, ¿cuál es la distribución de llamados en el tiempo? Te invito a que exploremos juntos la base de llamados de la Línea 144 con Python y las librerías Matplotlib y Seaborn."
                         bannerImage={bannerLinea144}
@@ -72,8 +73,9 @@ export function MainPage() {
                         </Pill>
                     </CardProject>
                     <CardProject
-                        title="Análisis descriptivo de la Linea 144"
-                        body="¿Cúal es la edad media de las personas que denuncian violencia de género?, ¿cuántos tipos de géneros podemos encontrar?, ¿cuál es la distribución de llamados en el tiempo? Te invito a que exploremos juntos la base de llamados de la Línea 144 con Python y las librerías Matplotlib y Seaborn."
+                        projectId="2"
+                        title="Automatización de envío de Emails"
+                        body="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when.."
                         bannerImage={bannerLinea144}
                     >
                         <Pill
@@ -102,8 +104,9 @@ export function MainPage() {
                         </Pill>
                     </CardProject>
                     <CardProject
-                        title="Análisis descriptivo de la Linea 144"
-                        body="¿Cúal es la edad media de las personas que denuncian violencia de género?, ¿cuántos tipos de géneros podemos encontrar?, ¿cuál es la distribución de llamados en el tiempo? Te invito a que exploremos juntos la base de llamados de la Línea 144 con Python y las librerías Matplotlib y Seaborn."
+                        projectId="3"
+                        title="Regresión Lineal con Scikit-Learn"
+                        body="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when."
                         bannerImage={bannerLinea144}
                     >
                         <Pill

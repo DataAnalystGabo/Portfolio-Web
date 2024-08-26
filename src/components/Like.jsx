@@ -17,9 +17,6 @@ const getUserId = () => {
 export function Like({ projectId, projectName }) {
     const [liked, setLiked] = useState(false);
     const [likes, setLikes] = useState(0);
-    //userId debería captar la IP del usuario que da like
-    //para identificarlo de manera única y permitirle
-    //que sea el único que pueda quitar el like
     const userId = getUserId();
 
     //Ejecuta una consulta a la tabla Likes
@@ -29,9 +26,7 @@ export function Like({ projectId, projectName }) {
             const { data, error } = await supabase
                 .from("Likes")
                 .select("*")
-                .eq("user_id", userId)
-                .eq("project_id", projectId)
-                .eq("project_name", projectName);
+                .eq("project_id", projectId);
 
             if (error) console.error(error);
             else setLikes(data.length);

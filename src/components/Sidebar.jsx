@@ -10,99 +10,96 @@ import fotoPerfil from "@assets/fotoPerfil.webp";
 
 export function Sidebar() {
   return (
-    <>
-      <Container>
-        <Header>
-          <PictureProfile>
-            <img src={fotoPerfil}></img>
-          </PictureProfile>
-          <DataProfile>
-            <NameProfile>
-              <h1>Gonzalo Ramirez</h1>
-              <BsPatchCheckFill />
-            </NameProfile>
-            <h2>Data Analyst en GCBA</h2>
-            <h3>Buenos Aires, Argentina</h3>
-            <IconsProfile>
-              <LinkProfile
-                href="https://github.com/DataAnalystGabo"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <FaGithubAlt />
-                <span>Github</span>
-              </LinkProfile>
-              <LinkProfile
-                href="https://www.linkedin.com/in/gonzaramirez95/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <FaLinkedinIn />
-                <span>Linkedin</span>
-              </LinkProfile>
-              <LinkProfile
-                href="mailto:gonzalogabrielramirez@outlook.com.ar"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <RiMailSendLine />
-                <span>Enviar email</span>
-              </LinkProfile>
-            </IconsProfile>
-          </DataProfile>
-        </Header>
-        <CardDefault
-          title="Acerca de mí"
-          body="
-                    Lorem Ipsum is simply dummy text of the printing and
-                    typesetting industry. Lorem Ipsum has been the
-                    industry's standard dummy text ever since the 1500s,
-                    when.
+      <>
+          <Container>
+              <Header>
+                  <PictureProfile>
+                      <img src={fotoPerfil}></img>
+                  </PictureProfile>
+                  <DataProfile>
+                      <NameProfile>
+                          <h1>Gonzalo Ramirez</h1>
+                          <BsPatchCheckFill />
+                      </NameProfile>
+                      <h2>Data Analyst en GCBA</h2>
+                      <h3>Buenos Aires, Argentina</h3>
+                      <IconsProfile>
+                          <LinkProfile
+                              href="https://github.com/DataAnalystGabo"
+                              target="_blank"
+                              rel="noopener noreferrer"
+                          >
+                              <FaGithubAlt />
+                              <span>Github</span>
+                          </LinkProfile>
+                          <LinkProfile
+                              href="https://www.linkedin.com/in/gonzaramirez95/"
+                              target="_blank"
+                              rel="noopener noreferrer"
+                          >
+                              <FaLinkedinIn />
+                              <span>Linkedin</span>
+                          </LinkProfile>
+                          <LinkProfile
+                              href="mailto:gonzalogabrielramirez@outlook.com.ar"
+                              target="_blank"
+                              rel="noopener noreferrer"
+                          >
+                              <RiMailSendLine />
+                              <span>Enviar email</span>
+                          </LinkProfile>
+                      </IconsProfile>
+                  </DataProfile>
+              </Header>
+              <CardDefault
+                  title="Acerca de mí"
+                  body="
+                    Tengo 28 años y soy un apasionado por los datos 📈. Hincha de River Plate ⚽. Estudiante de la Lic. en Ciencias de Datos. Fanático de Charly García 🤘 y su obra 🎹. Y me destaco por tener una personalidad inquieta y sedienta de conocimiento 🤓. 
                 "
-        ></CardDefault>
-        <ButtonDownload text="Descargar Cv" />
-        <CardDefault title="Stack de Herramientas">
-          <Pills>
-            <Pill
-              skill="SQL"
-              border="1.5px solid #495057"
-              backgroundColor="#4950571d"
-              color="#495057"
-            />
-            <Pill
-              skill="Power Bi"
-              border="1.5px solid #495057"
-              backgroundColor="#4950571d"
-              color="#495057"
-            />
-            <Pill
-              skill="Excel"
-              border="1.5px solid #495057"
-              backgroundColor="#4950571d"
-              color="#495057"
-            />
-            <Pill
-              skill="Python"
-              border="1.5px solid #495057"
-              backgroundColor="#4950571d"
-              color="#495057"
-            />
-            <Pill
-              skill="Git"
-              border="1.5px solid #495057"
-              backgroundColor="#4950571d"
-              color="#495057"
-            />
-            <Pill
-              skill="Jira"
-              border="1.5px solid #495057"
-              backgroundColor="#4950571d"
-              color="#495057"
-            />
-          </Pills>
-        </CardDefault>
-      </Container>
-    </>
+              ></CardDefault>
+              <ButtonDownload text="Descargar Cv" />
+              <CardDefault title="Stack de Herramientas">
+                  <Pills>
+                      <Pill
+                          skill="SQL"
+                          border="1.5px solid #495057"
+                          backgroundColor="#4950571d"
+                          color="#495057"
+                      />
+                      <Pill
+                          skill="Power Bi"
+                          border="1.5px solid #495057"
+                          backgroundColor="#4950571d"
+                          color="#495057"
+                      />
+                      <Pill
+                          skill="Excel"
+                          border="1.5px solid #495057"
+                          backgroundColor="#4950571d"
+                          color="#495057"
+                      />
+                      <Pill
+                          skill="Python"
+                          border="1.5px solid #495057"
+                          backgroundColor="#4950571d"
+                          color="#495057"
+                      />
+                      <Pill
+                          skill="Git"
+                          border="1.5px solid #495057"
+                          backgroundColor="#4950571d"
+                          color="#495057"
+                      />
+                      <Pill
+                          skill="Jira"
+                          border="1.5px solid #495057"
+                          backgroundColor="#4950571d"
+                          color="#495057"
+                      />
+                  </Pills>
+              </CardDefault>
+          </Container>
+      </>
   );
 }
 

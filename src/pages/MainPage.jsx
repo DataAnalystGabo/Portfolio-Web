@@ -6,6 +6,7 @@ import { IoLogoPython } from "react-icons/io5";
 import { AiOutlineRadarChart } from "react-icons/ai";
 import { TbChartAreaLineFilled } from "react-icons/tb";
 import bannerLinea144 from "@assets/bannerLinea144.webp";
+import bannerComingSoon from "@assets/bannerComingSoon.webp";
 
 export function MainPage() {
     return (
@@ -20,7 +21,7 @@ export function MainPage() {
                 <CardDefault
                     title="CERTIFICACIÓN ESPECIALIZACIÓN EN GESTIÓN PÚBLICA Y DATOS"
                     subTitle="Abril 2024 - Junio 2024"
-                    body="El programa impartido por el Instituto de Formación Política y Gestión Pública está diseñado para proporcionar herramientas específicas para la gestión pública. Está estructurado en dos partes: un ciclo introductorio de formación en gestión pública y el programa de especialización propiamente dicho"
+                    body="Programa impartido por el Instituto de Formación Política y Gestión Pública diseñado para proporcionar herramientas específicas para la gestión pública. El mismo se encuentra estructurado en dos partes: un ciclo introductorio de formación en gestión pública y un ciclo de especialización en el campo del análisis de datos."
                 />
             </Section>
             <Section>
@@ -28,14 +29,12 @@ export function MainPage() {
                 <CardDefault
                     title="MINISTERIO DE ESPACIO PÚBLICO e HIGIENE URBANA – GCBA (Data Analyst)"
                     subTitle="01/04/2023 - 30/04/2024"
-                    body="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when.
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when."
+                    body="Integré el equipo de la Gerencia Operativa de Reclamos como Analista de Datos, siendo partícipe de grandes proyectos en la Ciudad Autónoma de Buenos Aires."
                 />
                 <CardDefault
                     title="SECRETARIA DE INNOVACIÓN Y TRANSFORMACIÓN DIGITAL – GCBA (Data Analyst)"
                     subTitle="01/05/2024 - Actualidad"
-                    body="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when.
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when."
+                    body="Actualmente integro el equipo de Optimización de Subsidios de la Dirección General de Eficiencia Administrativa como Analista de Datos."
                 />
             </Section>
             <Section>
@@ -74,65 +73,55 @@ export function MainPage() {
                     </CardProject>
                     <CardProject
                         projectId="2"
-                        title="Automatización de envío de Emails"
-                        body="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when.."
-                        bannerImage={bannerLinea144}
+                        title="Proximamente estará actualizado"
+                        body="Si estás leyendo esto espero que me sepas entender. A medida que el trabajo y los estudios me permitan iré actualizando cada uno de mis proyectos construidos. He añadido una nueva función para mis cards, ahora podrás darle 'like' si te ha gustado el  projecto.
+                        ¡Gracias por estar aquí"
+                        bannerImage={bannerComingSoon}
                     >
                         <Pill
-                            skill="Python"
+                            skill="Coming Soon"
                             border="1.7px solid #0466c8"
                             backgroundColor="#0466c823"
                             color="#0466c8"
-                        >
-                            <IoLogoPython />
-                        </Pill>
+                        ></Pill>
                         <Pill
-                            skill="Matplotlib"
+                            skill="Coming Soon"
                             border="1.7px solid #007200"
                             backgroundColor="#0072001a"
                             color="#007200"
-                        >
-                            <AiOutlineRadarChart />
-                        </Pill>
+                        ></Pill>
                         <Pill
-                            skill="Seaborn"
+                            skill="Coming Soon"
                             border="1.7px solid #9381ff"
                             backgroundColor="#9481ff15"
                             color="#9381ff"
-                        >
-                            <TbChartAreaLineFilled />
-                        </Pill>
+                        ></Pill>
                     </CardProject>
                     <CardProject
                         projectId="3"
-                        title="Regresión Lineal con Scikit-Learn"
-                        body="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when."
-                        bannerImage={bannerLinea144}
+                        title="Proximamente estará actualizado"
+                        body="Si estás leyendo esto espero que me sepas entender. A medida que el trabajo y los estudios me permitan iré actualizando cada uno de mis proyectos construidos. He añadido una nueva función para mis cards, ahora podrás darle 'like' si te ha gustado el  projecto.
+                        ¡Gracias por estar aquí!"
+                        bannerImage={bannerComingSoon}
                     >
                         <Pill
-                            skill="Python"
+                            skill="Coming Soon"
                             border="1.7px solid #0466c8"
                             backgroundColor="#0466c823"
                             color="#0466c8"
-                        >
-                            <IoLogoPython />
-                        </Pill>
+                        ></Pill>
                         <Pill
-                            skill="Matplotlib"
+                            skill="Coming Soon"
                             border="1.7px solid #007200"
                             backgroundColor="#0072001a"
                             color="#007200"
-                        >
-                            <AiOutlineRadarChart />
-                        </Pill>
+                        ></Pill>
                         <Pill
-                            skill="Seaborn"
+                            skill="Coming Soon"
                             border="1.7px solid #9381ff"
                             backgroundColor="#9481ff15"
                             color="#9381ff"
-                        >
-                            <TbChartAreaLineFilled />
-                        </Pill>
+                        ></Pill>
                     </CardProject>
                 </CardsWrapper>
             </Section>
@@ -144,7 +133,7 @@ const Container = styled.div`
     flex: 1;
     display: flex;
     flex-direction: column;
-    gap: 5rem;
+    gap: 3rem;
     padding: 4rem 5rem;
     overflow-y: auto;
     background-color: var(--background);
@@ -161,9 +150,9 @@ const Section = styled.div`
     gap: 2rem;
     h2 {
         font-weight: var(--font-weight-medium);
-        color: var(--secondary-text);
+        color: var(--primary-color);
         padding: 0.625rem 0.625rem 0.625rem 0;
-        border-bottom: 1.5px solid var(--disabled-text);
+        border-bottom: 1.5px solid var(--primary-color);
     }
 `;
 

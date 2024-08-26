@@ -37,7 +37,7 @@ const Container = styled.div`
 
 const Banner = styled.picture`
     width: 100%;
-    height: auto;
+    height: 15rem;
     position: relative;
     background-color: var(--disabled-text);
     img {
@@ -46,6 +46,7 @@ const Banner = styled.picture`
         object-fit: cover;
         object-position: center;
         box-shadow: 0.1rem 0.1rem 0.1rem rgba(0, 0, 0, 0.1);
+        overflow: hidden;
     }
 `;
 
